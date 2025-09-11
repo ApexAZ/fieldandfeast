@@ -109,7 +109,6 @@ header h1, header p {
 header nav {
     background-color: var(--champagne-gold);
     padding: 13px;
-    margin-bottom: 50px;
 }
 
 nav ul {
@@ -128,15 +127,67 @@ nav a:hover {
     color: var(--linen);
 }
 
+/*Global Main Styles*/
 main {
-
-    padding: 0 20px;
+    padding: 13px;
 }
 
-h2 {
-    font-size: 1.7em;
+main section {
+    border-bottom: 2px solid var(--champagne-gold);
+}
+
+main h2 {
+    font-size: 1.8em;
     font-weight: 500;
     color: var(--midnight-blue);
+    padding: 32px 0 7px 0;;
+}
+
+section > p {
+    font-size: .9em;
+    font-weight: 500;
+    line-height: 1.45;
+    padding-bottom: 23px;
+}
+
+section > ul {
+    display: flex;
+    flex-direction:column;
+    gap: 13px;
+    padding: 15px 0 20px 0;
+}
+
+section li {
+    background-color: var(--olive-green);
+    border-radius: 8px;
+    color: var(--soft-white);
+    padding: 15px;
+    box-shadow: 0 2px 5px #818181;
+}
+
+li h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 5px 0;
+}
+
+li > p {
+    font-size: .9em;
+    line-height: 1.45;
+    margin: 0;
+}
+
+section li ul {
+    display: block;
+    list-style: disc;
+    padding: 0 0 0 10px;
+}
+
+section li ul li {
+    font-size: .9em;
+    line-height: 1.45;
+    padding: 0 0 0 3px;
+    box-shadow:0 0;
 }
 
 /*Global Footer Styles*/
@@ -177,16 +228,16 @@ footer a:nth-of-type(4) {
 
 
 /* MEDIA QUERY (medium) */
-@media media-type and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   /* CSS rules go here */
 }
 
 /* MEDIA QUERY (large) */
-@media media-type and (min-width: 900px) {
+@media screen and (min-width: 900px) {
   /* CSS rules go here */
 }
 
 /* MEDIA QUERY (xl) */
-@media media-type and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   /* CSS rules go here */
 }
