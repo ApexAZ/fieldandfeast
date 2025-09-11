@@ -140,24 +140,24 @@ main h2 {
     font-size: 1.8em;
     font-weight: 500;
     color: var(--midnight-blue);
-    padding: 32px 0 7px 0;;
+    padding: 30px 0 7px 0;;
 }
 
 section > p {
     font-size: .9em;
     font-weight: 500;
     line-height: 1.45;
-    padding-bottom: 23px;
+    padding-bottom: 20px;
 }
 
-section > ul {
+#offerings > ul {
     display: flex;
     flex-direction:column;
     gap: 13px;
     padding: 15px 0 20px 0;
 }
 
-section li {
+#offerings li {
     background-color: var(--olive-green);
     border-radius: 8px;
     color: var(--soft-white);
@@ -165,30 +165,63 @@ section li {
     box-shadow: 0 2px 5px #818181;
 }
 
-li h3 {
+#offerings li h3 {
     font-size: 1.5em;
     font-weight: 700;
     padding: 5px 0;
 }
 
-li > p {
+#offerings li > p {
     font-size: .9em;
     line-height: 1.45;
     margin: 0;
 }
 
-section li ul {
+#offerings li ul {
     display: block;
     list-style: disc;
     padding: 0 0 0 10px;
 }
 
-section li ul li {
+#offerings li ul li {
     font-size: .9em;
     line-height: 1.45;
     padding: 0 0 0 3px;
     box-shadow:0 0;
 }
+
+#gallery ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#gallery li {
+    background-color: var(--linen);
+    max-width: 390px;
+    max-height: 295px;
+    border-radius: 8px;
+    color: var(--soft-white);
+    padding-bottom: 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #818181;
+}
+
+#gallery li img {
+    display: block;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+#gallery li p {
+    color: var(--dark-charcoal);
+    font-size: .8em;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    padding-top: 12px;
+}
+
 
 /*Global Footer Styles*/
 footer {
