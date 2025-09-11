@@ -55,7 +55,6 @@ table {
 
 /* ROOT VARIABLES */
 :root {
-
     /*typography*/
     --main-font: 'Playfair Display', 'Arial', sans-serif;
 
@@ -66,20 +65,21 @@ table {
     --linen: #F8F4EC;
     --dark-charcoal: #2B2B2B;
     --soft-white: #FAF9F6;
-
-
 }
 
 /* GLOBAL STYLES (mobile first/small) */
+
+/*Global Body Styles*/
 body {
     max-width: 450px;
     font-family: var(--main-font);
     font-size: 1em;
-    background-color: var(--linen);
+    background-color: var(--soft-white);
     color: var(--dark-charcoal);
     margin: 0 auto;
 }
 
+/*Global Header Styles*/
 header {
     background-color: var(--midnight-blue);
     text-align: center;
@@ -109,6 +109,7 @@ header h1, header p {
 header nav {
     background-color: var(--champagne-gold);
     padding: 13px;
+    margin-bottom: 50px;
 }
 
 nav ul {
@@ -121,6 +122,57 @@ nav a {
     font-size: 1.32em;
     font-weight: 800;
     color: var(--midnight-blue);
+}
+
+nav a:hover {
+    color: var(--linen);
+}
+
+main {
+
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-weight: 500;
+    color: var(--midnight-blue);
+}
+
+/*Global Footer Styles*/
+footer {
+    text-align: center;
+    background-color: var(--midnight-blue);
+    padding: 58px 0 30px 0;
+}
+
+footer address {
+    font-size: .85em;
+    font-weight: 400;
+    color: var(--soft-white);
+    line-height: 1.5;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--soft-white);
+}
+
+footer a:nth-of-type(2) {
+    display: inline-block;
+    color: var(--champagne-gold);
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+footer a:nth-of-type(3) {
+    color: var(--champagne-gold);
+    font-weight: 600;
+}
+
+footer a:nth-of-type(4) {
+    color: var(--champagne-gold);
+    font-weight: 600;
 }
 
 
