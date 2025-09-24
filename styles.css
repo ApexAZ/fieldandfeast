@@ -86,19 +86,19 @@ header {
 
 header img {
     max-width: 175px;
-    padding: 16px 0;
+    margin-top: 25px;
 }
 
 header h1 {
     font-size: 3.5em;
     font-weight: 700;
-    padding-bottom: 26px;
+    margin: 20px 0;
 }
 
 header p {
     font-size: 1.1em;
     font-style: italic;
-    padding-bottom: 26px;
+    margin: 30px 0;
 }
 
 header h1, header p {
@@ -107,7 +107,7 @@ header h1, header p {
 
 header nav {
     background-color: var(--champagne-gold);
-    padding: 13px;
+    padding: 15px;
 }
 
 nav ul {
@@ -128,7 +128,7 @@ nav a:hover {
 
 /*Global Main Styles*/
 main {
-    padding: 28px;
+    padding: 30px;
 }
 
 main section {
@@ -206,8 +206,15 @@ section > p {
 #gallery li img {
     display: block;
     width: 100%;
+    height: auto;
     border-radius: 8px 8px 0 0;
 }
+
+    #gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
 #gallery li figcaption {
     color: var(--dark-charcoal);
@@ -215,7 +222,7 @@ section > p {
     font-weight: 600;
     font-style: italic;
     text-align: center;
-    padding: 15px 5px;
+    padding: 15px 10px;
 }
 
 #gallery a {
@@ -275,29 +282,21 @@ footer a:nth-of-type(4) {
 
 /* MEDIA QUERY (medium) */
 @media screen and (min-width: 600px) {
-    
-    /*Large Header Styles*/
+    /*Medium Header Styles*/
     header img {
         max-width: 200px;
-        padding: 20px 0;
     }
 
     header h1 {
-        font-size: 3.9em;
-        padding: 15px 0 20x 0;
+        font-size: 4em;
     }
 
     header p {
-        font-size: 1.3em;
-        padding-bottom: 30px;
-    }
-
-    header nav {
-        padding: 15px;
+        font-size: 1.25em;
     }
 
     nav a {
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
 
     /*Medium Main Styles*/
@@ -313,7 +312,7 @@ footer a:nth-of-type(4) {
 
     #offerings > ul {
         display: grid;
-        grid-template-columns: 1f 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
 
@@ -349,8 +348,6 @@ footer a:nth-of-type(4) {
     #gallery a {
         font-size: 1.1em;
     }
-
-
     /*Medium Footer Styles*/
     footer address {
         font-size: 1em;
@@ -362,82 +359,22 @@ footer a:nth-of-type(4) {
 
 
 /* MEDIA QUERY (large) */
-@media screen and (min-width: 900px) {
-    
-    /*Large Header Styles*/
-    header img {
-        max-width: 200px;
-        padding: 20px 0;
-    }
-
-    header h1 {
-        font-size: 3.9em;
-        padding: 15px 0 20x 0;
-    }
-
-    header p {
-        font-size: 1.3em;
-        padding-bottom: 30px;
-    }
-
-    header nav {
-        padding: 15px;
-    }
-
-    nav a {
-        font-size: 1.4em;
-    }
-
+@media screen and (min-width: 900px) {   
     /*Large Main Styles*/
-
     main h2 {
-        font-size: 2em;
-    }
-
-    section > p {
-        font-size: 1em;
-        line-height: 1.5;
-    }
-
-    #offerings > ul {
-        display: grid;
-        grid-template-columns: 1f 1fr;
-        gap: 20px;
-    }
-
-    #offerings li:nth-of-type(3) {
-        grid-column: 1 / 3;
+        font-size: 2.1em;
     }
 
     #offerings li h3 {
-        font-size: 1.7em;
-        line-height: 1.5;
-    }
-
-    #offerings li > p {
-        font-size: 1em;
-        line-height: 1.5;
-    }
-
-    #offerings li ul li {
-        font-size: 1em;
+        font-size: 1.8em;
         line-height: 1.4;
     }
 
     #gallery ul {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 20px
     }
-
-    #gallery li figcaption {
-        font-size: .9em;
-    }
-
-    #gallery a {
-        font-size: 1.1em;
-    }
-
 
     /*Large Footer Styles*/
     footer address {
@@ -448,5 +385,54 @@ footer a:nth-of-type(4) {
 
 /* MEDIA QUERY (xl) */
 @media screen and (min-width: 1200px) {
-  /* CSS rules go here */
+    /*XLarge Header Styles*/
+        header img {
+        max-width: 220px;
+    }
+     header h1 {
+        font-size: 4.5em;
+    }
+    header p {
+        font-size: 1.4em;
+    }
+    nav a {
+        font-size: 1.6em;
+    }
+    
+    /*XLarge Main Styles*/
+    main {
+    padding: 30px 120px;
+    }
+
+    section > p {
+        font-size: 1.1em;
+        line-height: 1.3;
+     }
+
+     #offerings h2 {
+        font-size: 1.6em;
+     }
+
+    #offerings li > p {
+        font-size: 1.1em;
+        line-height: 1.3;
+    }
+
+    #offerings li ul li {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+    #gallery ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 25px
+    }
+
+    #gallery li figcaption {
+        font-size: 1em;
+        line-height: 1.3;
+    }
+
 }
+
