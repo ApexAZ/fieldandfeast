@@ -356,8 +356,6 @@ footer a:nth-of-type(4) {
 
 }
 
-
-
 /* MEDIA QUERY (large) */
 @media screen and (min-width: 900px) {   
     /*Large Main Styles*/
@@ -386,7 +384,7 @@ footer a:nth-of-type(4) {
 /* MEDIA QUERY (xl) */
 @media screen and (min-width: 1200px) {
     /*XLarge Header Styles*/
-        header img {
+    header img {
         max-width: 220px;
     }
      header h1 {
@@ -401,7 +399,7 @@ footer a:nth-of-type(4) {
     
     /*XLarge Main Styles*/
     main {
-    padding: 30px 120px;
+        padding: 30px 120px;
     }
 
     section > p {
